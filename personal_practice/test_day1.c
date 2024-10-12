@@ -1,7 +1,7 @@
-//// 002
+ï»¿//// 002
 //#include <stdio.h>
 //
-//int main()
+//int main(void)
 //{
 //    printf("Hello, World!\n");
 //
@@ -43,7 +43,7 @@
 //int main()
 //{
 //	short age = 20;
-//	int high = 180;
+//	int height = 180;
 //	float weight = 88.5;
 //
 //	return 0;
@@ -52,7 +52,7 @@
 
 //#include <stdio.h>
 //
-//int global = 2019;  // È«¾Ö±äÁ¿
+//int global = 2019;  // å…¨å±€å˜é‡
 //int main()
 //{
 //    int local = 2018;
@@ -70,17 +70,14 @@
 //
 //int main()
 //{
-//	int num1 = 0;  // ³õÊ¼»¯£¬Ã»ÓĞ³õÊ¼»¯»Ø´æËæ»úÖµ£¬ºÃÏ°¹ß
+//	int num1 = 0;  // åˆå§‹åŒ–
 //	int num2 = 0;
 //
-//	// ÊäÈëÁ½¸öÕûÊı
-//	// scanf ÊÇÒ»¸öÊäÈëº¯Êı
-//	scanf("%d %d", &num1, &num2);  // &±íÊ¾È¡µØÖ·
-//
-//	// ÇóºÍ
+//	// è¾“å…¥ä¸¤ä¸ªæ•´æ•°
+//	scanf("%d %d", &num1, &num2);  // &è¡¨ç¤ºå–åœ°å€
+//	// æ±‚å’Œ
 //	int sum = num1 + num2;
-//
-//	//Êä³ö
+//	// è¾“å‡º
 //	printf("sum = %d", sum);
 //
 //	return 0;
@@ -91,7 +88,7 @@
 //// 006
 //#include <stdio.h>
 //
-//int a = 100;
+//int a = 1000;
 //
 //void test()
 //{
@@ -100,12 +97,13 @@
 //
 //int main()
 //{
+//	int a = 100;
 //	test();
 //	{
 //		int a = 10;
 //		printf("a = %d\n", a);
 //	}
-//	// printf("a = %d", a);  // Èç¹ûÃ»ÓĞÈ«¾Öa£¬±¨´í
+//	printf("a = %d", a);  // å¦‚æœæ²¡æœ‰å…¨å±€aï¼ŒæŠ¥é”™
 //
 //	return 0;
 //}

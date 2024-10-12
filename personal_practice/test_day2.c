@@ -1,28 +1,28 @@
-#define _CRT_SECURE_NO_WARNINGS
+ï»¿#define _CRT_SECURE_NO_WARNINGS
 //// 007
 //#include <stdio.h>
 //
-//int main() {
-//
-//	//// 1. ×ÖÃæ³£Á¿
+//int main()
+//{
+//	//// 1. å­—é¢å¸¸é‡
 //	//30;
 //	//3.14;
-//	//'w';  // ×Ö·û
-//	//"abc";  // ×Ö·û´®
+//	//'w';  // å­—ç¬¦
+//	//"abc";  // å­—ç¬¦ä¸²
 //
-//	//// 2. constĞŞÊÎµÄ³£±äÁ¿
-//	//const int a = 10;  // const ĞŞÊÎµÄ a ±¾ÖÊÊÇ±äÁ¿£¬µ«²»ÄÜ±»ĞŞ¸Ä
-//	//// a = 20;  // ²»ÄÜÔÙĞŞ¸Ä£¬±àÒëÆ÷»á±¨´í
+//	//// 2. constä¿®é¥°çš„å¸¸å˜é‡
+//	//const int a = 10;  // const ä¿®é¥°çš„ a æœ¬è´¨æ˜¯å˜é‡ï¼Œä½†ä¸èƒ½ç›´æ¥ä¿®æ”¹
+//	//// a = 20;  // ä¸èƒ½å†ä¿®æ”¹ï¼Œç¼–è¯‘å™¨ä¼šæŠ¥é”™
 //	//printf("%d\n", a);
 //
 //	//const int n = 10;
-//	//int arr[n] = { 0 };  // ÒÀÈ»²»ÄÜÊ¹ÓÃ
+//	//int arr[n] = {0};  // ä¾ç„¶ä¸èƒ½ä½¿ç”¨ï¼ŒæŒ‡å®šæ•°ç»„å¤§å°åªèƒ½ç”¨å¸¸é‡
 //
 //	return 0;
 //}
 
 
-//// 3. #define¶¨ÒåµÄ³£Á¿±êÊ¶·û
+//// 3. #define å®šä¹‰çš„å¸¸é‡æ ‡è¯†ç¬¦
 //#define MAX 100
 //#define STR "abcdef"
 //#include <stdio.h>
@@ -38,12 +38,12 @@
 //}
 
 
-//// 4. Ã¶¾Ù³£Á¿
+//// 4. æšä¸¾å¸¸é‡
 //#include <stdio.h>
 //
-//enum Color
+//enum color
 //{
-//	// Ã¶¾Ù³£Á¿
+//	// æšä¸¾å¸¸é‡
 //	RED,
 //	GREEN,
 //	BLUE
@@ -51,10 +51,10 @@
 //
 //int main()
 //{
-//	// RGB
-//	enum Color c = RED;
-//	enum Color d = GREEN;
-//	enum Color e = BLUE;
+//	// rgb
+//	enum color c = RED;
+//	enum color d = GREEN;
+//	enum color e = BLUE;
 //	printf("%d\n", c);
 //	printf("%d\n", d);
 //	printf("%d\n", e);
@@ -63,32 +63,37 @@
 //}
 
 
+
+//// 008
 //#include <stdio.h>
 //#include <string.h>
 //
 //int main()
 //{
 //	char ch = 'w';
-//	char arr1[] = "abcdef";
+//	char arr1[] = "ä½ å¥½ ä¸–ç•Œ";
 //	char arr2[] = {'a', 'b', 'c', 'd', 'e', 'f'};
 //	char arr3[] = {'a', 'b', 'c', 'd', 'e', 'f', '\0'};
 //
-//	printf("arr1: %s\n", arr1);
+//	printf("arr1: %s\n", arr1);  // %s æ‰“å°å­—ç¬¦ä¸²
 //	printf("arr2: %s\n", arr2);
 //	printf("arr3: %s\n", arr3);
-//	printf("Len of arr1: %zd\n", strlen(arr1));  // ³¤¶È²»°üº¬ \0£¬¿´ \0 Ö®Ç°³öÏÖ¶àÉÙ¸ö×Ö·û
+//	printf("Len of arr1: %zd\n", strlen(arr1));  // é•¿åº¦ä¸åŒ…å« \0ï¼Œçœ‹ \0 ä¹‹å‰å‡ºç°å¤šå°‘ä¸ªå­—ç¬¦
 //	printf("Len of arr2: %zd\n", strlen(arr2));
+//	printf("Len of arr3: %zd\n", strlen(arr3));
 //
-//	return 0;
+// 	return 0;
 //}
 
 
-//// ×ªÒå×Ö·û
+
+//// 009
+//// è½¬ä¹‰å­—ç¬¦
 //#include <stdio.h>
 //
 //int main()
 //{
-//	// Èı×ÖÄ¸´Ê£¬ÔçÆÚÉè±¸ ??) --> ]
+//	// ä¸‰å­—æ¯è¯ï¼Œæ—©æœŸè®¾å¤‡ ??) --> ]
 //	printf("%s\n", "(Are you ok\?\?)");
 //	printf("%c\n", '\'');
 //	printf("abc\"def\n");
@@ -98,11 +103,14 @@
 //	printf("a: \130 \n");
 //	printf("a: \628 \n");
 //	printf("c: \x7a \n");
+//	printf("ä½ å¥½\n");
 //
 //	return 0;
 //}
 
 
+
+//// 010
 //#include <stdio.h>
 //
 //int main()
@@ -112,8 +120,81 @@
 //	int b = 20;
 //	*/
 //
-//	// ´´½¨Ö¸Õë±äÁ¿p£¬²¢¸³ÖµÎªNULL
+//	// åˆ›å»ºæŒ‡é’ˆå˜é‡pï¼Œå¹¶èµ‹å€¼ä¸ºNULL
 //	int* p = NULL;
 //
+//	return 0;
+//}
+
+
+
+//// 012
+//#include <stdio.h>
+//
+//int main()
+//{
+//	int input = 0;
+//	printf("è¦å¥½å¥½å­¦ä¹ å—ï¼Ÿ\n");
+//	scanf("%d", &input);
+//	if (input == 1) {
+//		printf("å¥½å¥½å­¦ä¹ ï¼\n");
+//	}
+//	else {
+//		printf("å–çº¢è–¯ï¼\n");
+//	}
+//
+//	return 0;
+//}
+
+
+//#include <stdio.h>
+//
+//int main()
+//{
+//	int line = 0;
+//	while (line < 10) {
+//		printf("å†™ä»£ç ï¼Œå·²ç»ç§¯ç´¯äº† %d è¡Œä»£ç \n", line);
+//		line++;
+//	}
+//	
+//	return 0;
+//}
+
+
+
+//// 013
+//// æ±‚2ä¸ªä»»æ„æ•´æ•°çš„å’Œ
+//#include <stdio.h>
+//
+//int add(int x, int y) {
+//	int z = x + y;
+//	return z;
+//}
+//
+//int main()
+//{
+//	int n1 = 0;
+//	int n2 = 0;
+//	
+//	scanf("%d %d", &n1, &n2);
+//	int sum = add(n1, n2);
+//	printf("%d", sum);
+//	return 0;
+//}
+
+
+
+//// 014
+//#include <stdio.h>
+//
+//int main()
+//{
+//	int arr[10] = {10, 11, 12, 13, 14, 15, 16, 17, 18, 19};
+//	int i = 0;
+//	while (i < 10) {
+//		printf("Index %d: %d\n", i, arr[i]);
+//		i++;
+//	}
+//	
 //	return 0;
 //}

@@ -37,3 +37,57 @@
 //}
 
 
+
+//// 021
+//#define NUM 100
+//int main() {
+//	printf("%d\n", NUM);
+//	int n = NUM;
+//	int arr[NUM] = { 0 };
+//
+//	return 0;
+//}
+
+
+//#define ADD(x, y) ((x) + (y))
+//int main() {
+//	int a = 10;
+//	int b = 20;
+//	int c = ADD(a, b);
+//	printf("%d\n", c);
+//
+//	return 0;
+//}
+
+
+
+//// 023
+//int main() {
+//	int a = 10;  // 向内存申请4个字节，存储10
+//	printf("%p\n", &a);  // 取地址操作符
+//	int* p = &a;  // p就是指针变量
+//	char ch = 'w';
+//	char* pc = &ch;
+//	printf("%p\n", pc);
+//
+//	return 0;
+//}
+
+
+//int main() {
+//	int a = 10;
+//	int* p = &a;
+//	*p = 20;  // 解引用操作符
+//	printf("Address: 0x%p	Value: %d\n", p, a);
+//
+//	return 0;
+//}
+
+
+//int main() {
+//	printf("%zd\n", sizeof(char*));
+//	printf("%zd\n", sizeof(short*));
+//	printf("%zd\n", sizeof(int*));
+//
+//	return 0;
+//}

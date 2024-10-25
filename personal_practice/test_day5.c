@@ -105,3 +105,58 @@
 //		break;
 //	}
 //}
+
+
+
+//// 027
+//int main()
+//{
+//	int n = 0;
+//	while (n <= 10)
+//	{
+//		n++;
+//		if (n == 3)
+//			continue;
+//		if (n == 8)
+//			break;
+//		printf("%d\n", n);
+//	}
+// 
+//	return 0;
+//}
+
+
+
+// 029
+//int main()
+//{
+//	int ch = getchar();
+//	printf("%c, %d\n", ch, ch);
+//	putchar(ch);
+//
+//	return 0;
+//}
+
+
+
+//// 030
+//int main()
+//{
+//	char password[20] = { 0 };
+//	printf("请输入密码:> ");
+//	scanf("%s", password);  // 数组本身就是地址，不用再取地址
+//	// 清理缓冲区
+//	int ch = 0;
+//	while ((ch = getchar()) != '\n')
+//	{
+//		;
+//	}
+//	printf("请确认密码（Y/N）:> ");
+//	int ret = getchar();
+//	if ('Y' == ret)
+//		printf("Yes\n");
+//	else
+//		printf("No\n");
+//
+//	return 0;
+//}

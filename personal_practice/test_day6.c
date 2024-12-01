@@ -68,4 +68,117 @@
 
 
 
-// 033
+//// 033
+//int main()
+//{
+//	int i = 0;
+//	for (i = 1; i <= 10; i += 2)
+//	{
+//		if (i == 5) continue;
+//		printf("%d\n", i);
+//	}
+//
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	int arr[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+//	int i = 0;
+//	for (i = 0; i < 10; i++)
+//	{
+//		printf("%d", arr[i]);
+//	}
+//
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	int i = 0;
+//	int j = 0;
+//	int total = 0;
+//	for (i = 0; i < 5; i++)
+//	{
+//		for (j = 0; j < 5; j++)
+//		{
+//			printf("I = %d, J = %d\n", i, j);
+//			total++;
+//		}
+//	}
+//	printf("Total Loop: %d", total);
+//
+//	return 0;
+//}
+
+
+
+//// 034
+//int main()
+//{
+//	int i = 1;
+//	do
+//	{	
+//		i++;
+//		if (i == 5) continue;
+//		printf("%d ", i);
+//	}
+//	while (i <= 10);
+//
+//	return 0;
+//}
+
+
+
+//// 036
+//int main()
+//{
+//	int n = 1;
+//	int temp = 0;
+//	int result = 0;
+//	int i = 0;
+//	for (n = 1; n <= 10; n++)
+//	{
+//		temp = 1;
+//		for (i = n; i > 0; i--)
+//		{
+//			temp *= i;
+//		}
+//		result += temp;
+//	}
+//	printf("%d", result);
+//
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	int arr[] = { 1,2,3,4,5,6,7,8,9,10,12,13,14,15 };
+//	int k = 11;
+//
+//	int left = 0;
+//	int right = sizeof(arr) / sizeof(arr[0]) - 1;
+//	int mid = 0;
+//
+//	while (left <= right)
+//	{
+//		mid = (right + left) / 2;
+//		if (arr[mid] == k)
+//		{
+//			printf("Exist,Index = %d\n", mid);
+//			break;
+//		}
+//		else if (k < arr[mid])
+//		{
+//			right = mid - 1;
+//		}
+//		else
+//		{
+//			left = mid + 1;
+//		}
+//	}
+//	if (left > right) printf("%d dosen't exist.\n", k);
+//}
